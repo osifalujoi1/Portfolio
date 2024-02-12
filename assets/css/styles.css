@@ -993,6 +993,16 @@ body.dark-theme{
   color: var(--text-color-light);
 }
 
+.footer__copy{
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+.footer__copy a{
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+}
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
   width: .6rem;
