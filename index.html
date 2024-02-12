@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+      <!--=============== FONT AWESOME ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Responsive portfolio website</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-circle">I</span>
+                <span class="nav__logo-name">Ife Osifalujo.</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <span class="nav__title">Menu</span>
+
+                <h3 class="nav__name">Ife</h3>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Theme button-->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+                <h1 class="home__name">
+                    Ife Osifalujo
+                </h1>
+
+                <div class="home__perfil">
+                    <div class="home__image">
+                        <img src="assets/img/home-perfil.jpg" alt="image" class="home__img">
+                        <div class="home__shadow"></div>
+
+                        <img src="assets/img/curved-arrow.svg" alt="image" class="home__arrow">
+                        <img src="assets/img/random-lines.svg" alt="image" class="home__line">
+
+                        <div class="geometric-box"></div>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="mailto:osifalujoi1@mymail.nku.edu" target="_blank" class="home__social-link">
+                            <i class="fas fa-at"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ifeoluwa-osifalujo-1ba6b51b8/" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/osifalujoi1" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__info">
+                    <p class="home__description">
+                        <b>Computer Science Junior</b>, with indepth knowledge in responsive web 
+                        design and object-oriented programming.  
+                    </p>
+
+                    <a href="#about" class="home__scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+
+                        <span class="home__scroll-text">Scroll Down</span>
+                    </a>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+                <h2 class="section__title-1">
+                    <span>About Me.</span>
+                </h2>
+
+                <div class="about__perfil">
+                    <div class="about__image">
+                        <img src="assets/img/about-perfil.jpg" alt="image" class="about__img">
+
+                        <div class="about__shadow"></div>
+
+                        <div class="geometric-box"></div>
+                        <img src="assets/img/random-lines.svg" alt="" class="about__line">
+                        <div class="about__box"></div>
+                    </div>
+                </div>
+
+                <div class="about__info">
+                    <p class="about__description">
+                        I am a <b>Computer Science major</b> seeking internship/co-op opportunities in full stack development and software enginneering roles.
+                        My minor in Electronic Media and Broadcasting and I enjoy editing, problem solving, and creating in general.
+                        I'm driven to explore new possibilities as I work my way up to become a <b>Full Stack Multimedia Developer</b>. 
+                    </p>
+
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <b>My Skills Are:</b> HTML, CSS, JavaScript, Git & github,
+                            Java, C#, C++, Python, Adobe Premier Pro, Adobe Audition, and Adobe Photoshop.
+                        </li>
+                    </ul>
+
+                    <div class="about__buttons">
+                        <a href="#contact" class="button">
+                            <i class="ri-send-plane-line"></i> Contact Me
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/ifeoluwa-osifalujo-1ba6b51b8/" target="_blank" class="button__ghost">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== RESUME ====================-->
+         <section class="resume section" id="resume">
+            <h2 class="section__title-2">
+                <span>Resume.</span>
+            </h2>
+
+            <div class="resume__container container grid">
+                <article class="resume__card">
+                    <div class="resume__border">
+                     
+                    </div>
+                </article>
+            </div>
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h2 class="section__title-1">
+                <span>Projects.</span>
+            </h2>
+
+            <div class="projects__container container grid">
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-1.png" alt="image" class="projects__img">
+
+                        <a href="https://youtu.be/fyn1O_RJA08?si=-4YEtxWDASq2JYH1" class="projects__button button">
+                            <i class="ri-arrow-right-up-line">
+                            </i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Podcast</h3>
+                        <h2 class="projects__title">True Crime</h2>
+
+                        <p class="projects__description">
+                            A true crime podcast that researches the possibilities of committing murder with no motive.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://youtu.be/fyn1O_RJA08?si=-4YEtxWDASq2JYH1" target="_blank" class="projects__link">
+                            <i class="ri-youtube-line"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-5.png" alt="image" class="projects__img">
+
+                        <a href="https://osifalujoi1.github.io/DocumentationPage/" class="projects__button button">
+                            <i class="ri-arrow-right-up-line">
+                            </i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Documentation Page</h3>
+                        <h2 class="projects__title">Quantum Computing</h2>
+
+                        <p class="projects__description">
+                            
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://osifalujoi1.github.io/DocumentationPage/" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-2.png" alt="image" class="projects__img">
+
+                        <a href="https://osifalujoi1.github.io/VEME/" class="projects__button button">
+                            <i class="ri-arrow-right-up-line">
+                            </i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Webpage</h3>
+                        <h2 class="projects__title">Survey Form</h2>
+
+                        <p class="projects__description">
+                            
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://osifalujoi1.github.io/VEME/" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-3.png" alt="image" class="projects__img">
+
+                        <a href="https://osifalujoi1.github.io/TributePage/" class="projects__button button">
+                            <i class="ri-arrow-right-up-line">
+                            </i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Webpage</h3>
+                        <h2 class="projects__title">Ada Lovelace Tribute</h2>
+
+                        <p class="projects__description">
+                            
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://osifalujoi1.github.io/TributePage/" target="_blank" class="projects__link">
+                            <i class="ri-github-line"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__data">
+                    <h2 class="section__title-2">
+                    <span>Contact Me.</span>
+                    </h2>
+                
+
+                <p class="contact__description-1">
+                    I read and respond promptly to emails.
+                </p>
+                <p class="contact__description-2">
+                    Please include your <b>Name</b> and <b>Email Address</b>.
+                </p>
+
+                <div class="geometric-box"></div>
+            </div>
+
+                <div class="contact__mail">
+                    <h2 class="contact__title">
+                        Send Me A Message
+                    </h2>
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <div class="contact__box">
+                                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
+                                <label for="name" class="contact__label">First Name</label>
+                            </div>
+                            
+                            <div class="contact__box">
+                                <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
+                                <label for="name" class="contact__label">Email Address</label>
+                            </div>
+                        </div>
+
+                        <div class="contact__box">
+                            <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                            <label for="subject" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__box contact__area">
+                            <textarea class="contact__input" name="user_message" id="message" required placeholder="Message"></textarea>
+                            <label for="message" class="contact__label">Message</label>
+                        </div>
+
+                        <p class="contact__message" id="contact-message">
+                           
+                        </p>
+
+                        <button type="submit" class="contact__button button">
+                            <i class="ri-send-plane-line"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact__social">
+                    <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
+
+                    <div class="contact__social-data">
+                        <div>
+                            <p class="contact__social-description-1">
+                                Email doesn't work?
+                            </p>
+                            <p class="contact__social-description-2">
+                                Reach me on my social networks
+                            </p>
+                        </div>
+
+                        <div class="contact__social-links">
+                            <a href="https://www.instagram.com/ife_osifalujo/?igsh=MWdjbXZyeGxpaTdjbQ%3D%3D&utm_source=qr" target="_blank" class="contact__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100075209655679&mibextid=2JQ9oc" target="_blank" class="contact__social-link">
+                                <i class="ri-facebook-circle-line"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/ifeoluwa-osifalujo-1ba6b51b8/" target="_blank" class="contact__social-link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <uL class="footer__links">
+                <li>
+                    <a href="#resume" class="footer__link">Resume</a>
+                </li>
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </uL>
+
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+      
+      <!--=============== EMAIL JS ===============-->
+      <script
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
