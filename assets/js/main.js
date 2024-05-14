@@ -130,11 +130,10 @@ themeButton.addEventListener('click', () => {
 const sr = ScrollReveal({ 
     origin: 'top',
     distance: '60px',
-    duration: 2500,
-    delay: 400,
+    duration: 2000,
+    delay: 300,
     // reset: true //animations repeat
 })
 
 sr.reveal('.home__perfil, .about__image, .contact__mail', {origin: 'right'})
-sr.reveal('.home__name, .home__info, .about__container, .section__title-1, .about__info, .contact__social, .contact__data', {origin: 'left'})
-sr.reveal('.resume__card, .projects__card', {interval: 100})
+sr.reveal('.home__name, .home__info, .about__container', {origin: 'left'})
