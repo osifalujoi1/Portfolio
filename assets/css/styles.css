@@ -903,7 +903,7 @@ body.dark-theme{
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
   background-color: var(--black-color);
-  padding; 8px;
+  padding: 8px;
   pointer-events: none;
   transition: top .4s, opacity .4s, background-color .4s;
   opacity: 0;

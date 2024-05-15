@@ -14,29 +14,16 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="../assets/css/styles.css">
+      <link rel="stylesheet" href="../css/styles.css">
 
-      <title>Responsive portfolio website</title>
+      <title>Responsive Web Pages</title>
    </head>
    <body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__buttons">
-                <!-- Theme button-->
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-4-line"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
     <section class="projects section" id="projects">
         <h2 class="section__title-1">
-            <span>Static Web Pages.</span>
+            <span>Responsive Web Pages.</span>
         </h2>
-        <!-- Static Web Pages -->
+        <!-- Responsive Web Pages -->
         <div class="projects__container container grid" id="projects__container">
             <div class="back-button" style="display: none; position: absolute; top: 10px; left: 10px; cursor: pointer;">
                 <i class="ri-arrow-go-back-line"></i> Back
@@ -46,7 +33,7 @@
             <!-- Tribute Page Project -->
             <article class="projects__card">
                 <div class="projects__image">
-                    <img src="../assets/img/project-3.png" alt="image" class="projects__img">
+                    <img src="../img/project-3.png" alt="image" class="projects__img">
 
                     <a href="https://osifalujoi1.github.io/TributePage/" class="projects__button button">
                         <i class="ri-arrow-right-up-line">
@@ -101,7 +88,7 @@
             <!-- Quantum Computing Page -->
             <article class="projects__card">
                 <div class="projects__image">
-                    <img src="../assets/img/project-5.png" alt="image" class="projects__img">
+                    <img src="../img/project-5.png" alt="image" class="projects__img">
 
                     <a href="https://osifalujoi1.github.io/DocumentationPage/" class="projects__button button">
                         <i class="ri-arrow-right-up-line">
@@ -128,7 +115,7 @@
             <!-- VEME PROJECT -->
             <article class="projects__card">
                 <div class="projects__image">
-                    <img src="../assets/img/project-2.png" alt="image" class="projects__img">
+                    <img src="../img/project-2.png" alt="image" class="projects__img">
 
                     <a href="https://osifalujoi1.github.io/VEME/" class="projects__button button">
                         <i class="ri-arrow-right-up-line">
@@ -155,9 +142,16 @@
         </div>
     </section>
     <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentTheme = localStorage.getItem('theme');
+
+            if (currentTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+            } else {
+                document.body.classList.remove('dark-theme');
+            }
+        });
+    </script>
    </body>
 </html>
-
-
-
-
