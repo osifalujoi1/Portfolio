@@ -22,3 +22,8 @@ const check = () => {
 };
 
 button.addEventListener("click", check);
+input.addEventListener("keydown", (e) => {
+  if(e.key === "Enter"){
+    check();
+  }
+})
