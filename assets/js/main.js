@@ -110,11 +110,11 @@ document.getElementById('theme-button').addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const currentTheme = localStorage.getItem('theme');
 
-    if (currentTheme === 'dark') {
-        document.body.classList.add('dark-theme');
+    if (currentTheme === 'light') {
+        document.body.classList.add('dark-theme'); 
     } else {
         document.body.classList.remove('dark-theme');
-    }
+    } 
 });
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
