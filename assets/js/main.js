@@ -110,8 +110,9 @@ document.getElementById('theme-button').addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const currentTheme = localStorage.getItem('theme');
 
-    if (currentTheme === 'light') {
+    if (currentTheme === 'dark' || currentTheme === null) {
         document.body.classList.add('dark-theme'); 
+        localStorage.setItem('theme', 'dark');
     } else {
         document.body.classList.remove('dark-theme');
     } 
@@ -126,7 +127,7 @@ const sr = ScrollReveal({
     // reset: true //animations repeat
 })
 
-sr.reveal('.home__perfil, .about__image, .contact__mail', {origin: 'right'})
+sr.reveal('.home__perfil, .about__image', {origin: 'right'})
 sr.reveal('.home__name, .home__info, .about__container', {origin: 'left'})
 
 // /*=============== SHOW PROJECTS ===============*/
