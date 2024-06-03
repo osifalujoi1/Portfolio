@@ -128,3 +128,51 @@ const sr = ScrollReveal({
 
 sr.reveal('.home__perfil, .about__image, .contact__mail', {origin: 'right'})
 sr.reveal('.home__name, .home__info, .about__container', {origin: 'left'})
+
+// /*=============== SHOW PROJECTS ===============*/
+// const projects = document.getElementById("projectsBtn");
+// projects.addEventListener("click", showProject());
+
+// function showProject() {
+//     const projectsClass = document.querySelector(".projects");
+//     projectsClass.style.display = "block";
+
+// }
+// /*=============== SHOW CONTACT ===============*/
+// const contact = document.getElementById("contactBtn");
+// contact.addEventListener("click", showContact());
+
+// function showContact(){
+//     const contactClass = document.querySelector(".contact");
+//     contactClass.style.display = "block";
+// }
+
+/*=============== SHOW / HIDE SECTIONS ===============*/
+const projectsBtn = document.querySelectorAll("[id=projectsBtn]");
+const homeBtn = document.querySelector(".nav__link[href='#home']");
+const aboutBtn = document.querySelector(".nav__link[href='#about']");
+const contactBtn = document.getElementById("contactBtn");
+
+function showProjectsAndContact() {
+    const projectsContact = document.querySelectorAll(".projects, .contact");
+    const homeAboutResume = document.querySelectorAll(".home, .about, .resume");
+
+    projectsContact.forEach(section => section.style.display = "block");
+    homeAboutResume.forEach(section => section.style.display = "none");
+}
+ 
+//Show home, about, and resume
+function showHomeAboutResume() {
+    const projectsContact = document.querySelectorAll(".projects, .contact");
+    const homeAboutResume = document.querySelectorAll(".home, .about, .resume");
+
+    projectsContact.forEach(section => section.style.display = "none");
+    homeAboutResume.forEach(section => section.style.display = "block");
+}
+
+
+projectsBtn.forEach(element => element.addEventListener("click", showProjectsAndContact));
+homeBtn.addEventListener("click", showHomeAboutResume);
+aboutBtn.addEventListener("click", showHomeAboutResume);
+contactBtn.addEventListener("click", showProjectsAndContact);
+showHomeAboutResume();

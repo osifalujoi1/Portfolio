@@ -701,6 +701,7 @@ body.dark-theme{
 /* } */
 
 .projects{
+  display: none;
   background-color: var(--container-color);
   transition: background-color .4s;
 }
@@ -790,6 +791,7 @@ body.dark-theme{
 /*=============== CONTACT ===============*/
 .contact{
   padding-bottom: 0;
+  display: none;
 }
 
 .contact__container{
@@ -1291,12 +1293,12 @@ body.dark-theme{
   }
   .home__arrow{
     top: 4.5rem;
-    left: -8rem;
+    left: -7rem;
     rotate: 80deg;
     width: 80px;
   }
   .home__line{
-    left: -15rem;
+    left: -13rem;
     bottom: 4rem;
     width: 80px;
     rotate: 30deg;
