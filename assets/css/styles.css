@@ -769,6 +769,8 @@ body.dark-theme{
 .contact{
   padding-bottom: 0;
   display: none;
+  background-color: var(--container-color);
+  transition: background-color .4s;
 }
 
 .contact__container{
