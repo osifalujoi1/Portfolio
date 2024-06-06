@@ -131,36 +131,34 @@ sr.reveal('.home__perfil, .about__image', {origin: 'right'})
 sr.reveal('.home__name, .home__info, .about__container', {origin: 'left'})
 
 /*=============== SHOW / HIDE SECTIONS ===============*/
-const projectsBtn = document.querySelectorAll("[id=projectsBtn]");
 const homeBtn = document.querySelector(".nav__link[href='#home']");
 const aboutBtn = document.querySelector(".nav__link[href='#about']");
 const contactBtn = document.getElementById("contactBtn");
 const resumeFooterBtn = document.getElementById("resumeBtn");
 const aboutFooterBtn = document.getElementById("aboutBtn");
 
-function showProjectsContactResume() {
-    const projectsContactResume = document.querySelectorAll(".projects, .contact, .resume");
+function showContactResume() {
+    const contactResume = document.querySelectorAll(".contact, .resume");
     const homeAbout = document.querySelectorAll(".home, .about");
 
-    projectsContactResume.forEach(section => section.style.display = "block");
+    contactResume.forEach(section => section.style.display = "block");
     homeAbout.forEach(section => section.style.display = "none");
 }
  
 //Show home, about, and resume
 function showHomeAbout() {
-    const projectsContactResume = document.querySelectorAll(".projects, .contact, .resume");
+    const contactResume = document.querySelectorAll(".contact, .resume");
     const homeAbout = document.querySelectorAll(".home, .about");
 
-    projectsContactResume.forEach(section => section.style.display = "none");
+    contactResume.forEach(section => section.style.display = "none");
     homeAbout.forEach(section => section.style.display = "block");
 }
 
 
-projectsBtn.forEach(element => element.addEventListener("click", showProjectsContactResume));
 homeBtn.addEventListener("click", showHomeAbout);
 aboutBtn.addEventListener("click", showHomeAbout);
-contactBtn.addEventListener("click", showProjectsContactResume);
-resumeFooterBtn.addEventListener("click", showProjectsContactResume);
+contactBtn.addEventListener("click", showContactResume);
+resumeFooterBtn.addEventListener("click", showContactResume);
 aboutFooterBtn.addEventListener("click", showHomeAbout);
 showHomeAboutResume();
 
